@@ -1,5 +1,7 @@
 name: CI - Snapshot
 run-name: CI snapshot disparada por ${{ github.actor }}
+
+
 on:
    # inicia o workflow manualmente
    workflow_dispatch:
