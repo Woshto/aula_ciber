@@ -7,7 +7,7 @@ on:
 
 jobs:
 
-   build_back:
+  build_back:
     name: Build Back
     runs-on: ubuntu-latest
     steps:
@@ -23,7 +23,7 @@ jobs:
           npm install
           npm run build
           
-   build_front:
+  build_front:
        name: Build Front
        runs-on: ubuntu-latest
        steps:
@@ -39,7 +39,7 @@ jobs:
              npm install
              npm run build
            
-   empacotar:
+  empacotar:
       name: Empacotar
       needs: [build_back, build_front]
       runs-on: ubuntu-latest
